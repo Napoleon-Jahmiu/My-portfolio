@@ -1,0 +1,175 @@
+:root {
+    --cone: rgba(93,109,126, 0.5);
+    --ctwo: rgba(52,74,94,0.5);
+    --cthree: rgba(203,67,53,0.5);
+    --cfour: rgba(231, 76,60, 0.5);
+    --dc: #333;
+    --wc: #fff;
+    --ac: #f4f4f4;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+html, 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--ac);
+    line-height: 1.4;
+}
+
+/* utility */
+.container {
+    max-width: var(--max-width);
+    padding: 1rem;
+    overflow: auto;
+    margin: auto;
+}
+
+.btn {
+    display: inline;
+    color: white;
+    background: var(--cthree);
+    padding: 1rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    font-size: 1.2rem;
+    color: var(--ac);
+    background: var(--cfour);
+}
+/* Navbar section */
+#navbar {
+    background: var(--cone);
+}
+
+ #navbar .container{
+    display: flex;
+    position: sticky;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    z-index: 1; 
+    left: 0;   
+    top: 0;
+}
+
+#navbar .work {
+    display: inline-block;
+    list-style: none;
+}
+
+#navbar .work img {
+    width: 50px;
+    height: 70px;
+    border-radius: 50%;
+    align-items: center;
+    float: left;
+}
+
+
+#navbar .work ul {
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+    line-height: 1.4;
+    justify-items: center;
+}
+
+#navbar .work ul li {
+    padding: 0.3rem;
+}
+
+#navbar .social {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.7rem;
+}
+
+.social .fa-facebook, 
+.social .fa-twitter {
+    color: rgba(40, 57, 209, 0.794);
+}
+
+.social .fa-instagram {
+    color: palevioletred;
+}
+
+#navbar .nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    padding: 0.5rem;
+}
+.nav ul li {
+    list-style: none;
+    padding: 0 0.4rem;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    /* display: inline; */
+    color: var(--wc);
+    
+}
+
+.nav ul li a:hover {
+    color: var(--cthree);
+    background: var(--ac);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+/* showcase section */
+#showcase {
+    display: flex;
+    color: var(--wc);
+    height: 100vh;
+    position: relative;
+    background: url(../img/jamiu2.jpg) no-repeat center center/cover;
+}
+
+
+#showcase .showcase-content{
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 4rem;
+    height: 100%;
+    text-align: center;
+    /* overlay */
+    background: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.showcase-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#showcase-content p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
