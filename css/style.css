@@ -55,6 +55,7 @@ p{ line-height: 1.4;}
     border: none;
     border-radius: 5px;
     margin-bottom: 0.3rem;
+    font-size: 0.5rem;
 }
 
 .py-1 {padding: 1.5rem 0;}
