@@ -11,8 +11,7 @@
 }
 
 .catone {background: var(--cone)}
-.cattwo {background: var(--ctwo)}
-.catthree {background: var(--ctw)}
+.cattwo {background: var(--cfour)}
 
 * {
     margin: 0;
@@ -249,13 +248,37 @@ p{ line-height: 1.4;}
     overflow: hidden;
 }
 
-#projects .project-packs .art{
+/* #projects .project-packs {
+    position: absolute;
+} */
+#projects .project-packs .art {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column: 1/span 2;
+    border-bottom: 1px dotted var(--cfour);
+    width: 100vw;
+    padding: 1rem;
+    z-index: 2;
 }
 
-#projects .project-packs .art img {
+/* #projects .project-packs .art::before {
+    content: "";
+    background: var(--cthree);
+    color: var(--wc);
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    
+} */
+
+#projects .project-packs .art img  {
+    width: 50%;
+    display: grid;
+
+}
+
+#projects .project-packs .art .expalain {
+    padding: 1rem;
     width: 50%;
 }
 
