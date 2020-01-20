@@ -48,6 +48,16 @@ p { line-height: 1.4;}
     color: var(--cfour);
 }
 
+.is-required::before {
+    content: '*';
+    color: red;
+    padding: .2rem;
+}
+
+.clr {
+    clear: both;
+}
+
 .category {
     text-transform: uppercase;
     padding: 0.5rem;
@@ -87,14 +97,16 @@ p { line-height: 1.4;}
 /* Navbar section */
 #navbar {
     background: var(--cone);
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    /* justify-content: space-between; */
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
  #navbar .container{
     display: flex;
-    position: sticky;
+
     color: #fff;
     padding: 0.5rem 1rem;
     justify-content: space-between;
@@ -136,7 +148,8 @@ p { line-height: 1.4;}
 }
 
 .social .fa-facebook, 
-.social .fa-twitter {
+.social .fa-twitter,
+.social .fa-linkedin {
     color: rgba(40, 57, 209, 0.794);
 }
 
@@ -163,7 +176,7 @@ p { line-height: 1.4;}
 .nav ul li a {
     text-decoration: none;
     display: inline;
-    color: var(--wc);
+        color: var(--wc);
     
 }
 
@@ -300,26 +313,31 @@ grid-template-columns: repeat(2, 2fr);
 #contact{
     background: var(--cone);
     position: relative;
+    overflow: hidden;
 }
 
 #contact .contact-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 1rem; */
+    width: var(--max-width);
+}
+
+#contact .contact-container .connect {
     /* position: relative; */
-    grid-template-columns: 500px 500px;
-}
-
-#contact .contact-container image {
-    width: 50%;
+    width: 40vw;
     padding-left: 1rem;
-    position: relative;
+    color: black;
+    text-align: center;
 }
 
-#contact .contact-container image::before{
+#contact .contact-container .connect::before{
     content: "";
-    position: absolute;
+    background: url('../img/unsplash2.jpg')no-repeat center center/cover;
+    /* position: absolute; */
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 #contact .contact-container .formup {
@@ -328,12 +346,39 @@ grid-template-columns: repeat(2, 2fr);
     width: 50%;
     color: var(--dc);
     padding: 1rem;
+    width: 60vw;
+    overflow: hidden;
 }   
 
 #contact .contact-container .formup h1 {
     color: var(--cfour);
     text-align: center;
-    display: flex;
-    align-content: center;
-    align-items: center;
+    /* display: flex
+    ; */
+    /* align-content: center; */
+    /* align-items: center; */
+    
+}
+
+#contact .contact-container .formup .form-wrap label {
+   margin-top: 1rem;
+}
+
+#contact .contact-container .form-wrap input {
+    width: 100%;
+    border: none;
+    border-color: var(--cfour);
+    padding: .8rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline-color: var(--cfour);
+}
+
+footer {
+    color: var(--wc);
+    background: var(--dc);
+    font-size: 1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
 }
