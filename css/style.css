@@ -106,7 +106,6 @@ p { line-height: 1.7;}
 
  #navbar .container{
     display: flex;
-
     color: #fff;
     padding: 0.5rem 1rem;
     justify-content: space-between;
@@ -237,8 +236,8 @@ p { line-height: 1.7;}
 /* this section is for both image and the text */
 #about .about-content{
     display: grid;
-    grid-template-columns: repeat();
     grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/span 2;
     grid-gap: 1rem;
     min-height: 600px;
     width: 100%;
@@ -251,7 +250,6 @@ p { line-height: 1.7;}
     margin-top: 1rem;
     max-height: 100%;
     width: 40%;
-    z-index: 0;
 }
 
 /* this is to define the text */
@@ -334,14 +332,14 @@ grid-template-columns: repeat(2, 2fr);
     
 }
 
-#contact .contact-container .connect::before {
+/* #contact .contact-container .connect::before {
     content: "";
     background: url('../img/unsplash2.jpg')no-repeat center center/cover;
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     opacity: 0.9;
-}
+} */
 
 #contact .contact-container .formup {
     background: var(--ac);

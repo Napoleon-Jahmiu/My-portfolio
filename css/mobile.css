@@ -1,0 +1,120 @@
+m-heading {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.is-required::before {
+    padding: 0.5rem;
+}
+
+.category {
+    padding: 0.3rem;
+    border-radius: .3rem;
+    font-size: .5rem;
+}
+
+.py-1 {padding: 1rem 0;}
+.py-2 {padding: 1.5rem 0;}
+.py-3 {padding: 2rem 0;}
+.p-1 {padding: 1rem;}
+.p-2 {padding: 1.5rem;}
+.p-3 {padding: 2rem;}
+
+#navbar .work ul>:last-child {
+    display: none;
+}
+
+#navbar .social .fa-instagram,
+#navbar .social .fa-facebook {
+    display: none;
+}
+
+.showcase-content h1 {
+    font-size: 1rem;
+    line-height: 1.5rem ;
+    margin-top: 2rem;
+}
+
+#showcase-content p {
+    font-size-adjust: .8rem;
+    margin: 2rem 0;
+    line-height: normal;
+}
+
+/* #about .about-content {
+    align-items: center;
+    align-content: center;
+} */
+
+#about .about-content h1 {
+    font-size: 1.5rem;
+    top: 0;
+    padding: 0 1rem;
+}
+
+#about .about-content img {
+    min-height: 0%;
+}
+
+#about .about-content .aboutme {
+    display: inline-table;
+    padding-left: 1rem;
+}
+
+
+@media (max-width:600px) {
+    
+#navbar .work ul {
+    display: none;
+}
+
+
+/* #navbar .work ul {
+    display: block;
+} */
+
+
+#navbar .container {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 2rem;
+}
+
+#navbar .social {
+    display: block;
+    text-align: center;
+}
+
+    #projects .project-packs .art {
+    grid-template-columns: 1fr;
+}
+
+#projects .project-packs .art img {
+    width: 90vw;
+    margin: auto;
+}
+
+#projects .project-packs .art .m-heading {
+    font-size: 1.5rem;
+}
+
+#contact .contact-container {
+    align-items: center;
+    margin: none;
+    padding: none;
+}
+
+#contact .contact-container{
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+#contact .contact-container img {
+    display: block/ norepeat center center/cover;
+
+    min-width: 100vw;
+}
+}
+
