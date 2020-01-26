@@ -85,6 +85,7 @@ m-heading {
 #navbar .social {
     display: block;
     text-align: center;
+    margin-bottom: .2rem;
 }
 
     #projects .project-packs .art {
@@ -118,3 +119,39 @@ m-heading {
 }
 }
 
+@media screen and (max-width:380px) {
+#navbar {
+    height: 150px;
+}
+
+#navbar .social {
+    display: none;    
+  }    
+#showcase {
+    position: relative;
+}
+
+#showcase-content {
+    margin-bottom: 3rem;
+}
+
+#about .about-content {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+
+#about .about-content img {
+    display: none;
+}
+
+}
+
+@media (max-width:320px) {
+    #navbar .work img {
+        display: none;
+    }
+
+    #navbar {
+        padding: ;
+    }
+}
