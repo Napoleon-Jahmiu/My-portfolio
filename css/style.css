@@ -318,7 +318,7 @@ grid-template-columns: repeat(2, 2fr);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* grid-gap: 1rem; */
-    width: var(--max-width);
+    width: 100%;
 }
 
 #contact .contact-container .connect {
