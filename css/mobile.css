@@ -114,13 +114,16 @@ m-heading {
 }
 
 #contact .contact-container .connect {
-    display: inline;
-    width: 100vw;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
 }
 
-#contact .contact-container img {
-    display: inline;
+#contact .contact-container .formup {
+    display: block;
     min-width: 100vw;
+    margin: 0 0 2rem 0;
 }
 }
 
