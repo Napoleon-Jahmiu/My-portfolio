@@ -117,19 +117,23 @@ m-heading {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 #contact .contact-container .formup {
     display: block;
     min-width: 100vw;
-    margin: 0 0 2rem 0;
+    margin: auto;
 }
 }
 
 @media screen and (max-width:380px) {
 #navbar {
     height: 150px;
+}
+
+.m-heading {
+    font-size: 1.5rem;
 }
 
 #navbar .social {
@@ -159,4 +163,13 @@ m-heading {
         display: none;
     }
 
+    #navbar {
+        height: 80px;
+    }
+
+    #navbar .container {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    
 }
