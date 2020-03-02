@@ -52,10 +52,10 @@ m-heading {
     top: 0;
     padding: 0 1rem;
 }
-
+/* 
 #about .about-content img {
-    min-height: 0%;
-}
+    display: none;
+} */
 
 #about .about-content .aboutme {
     display: inline-table;
@@ -67,6 +67,12 @@ m-heading {
     
 #navbar .work ul {
     display: none;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: -10px; */
 }
 
 
@@ -86,6 +92,10 @@ m-heading {
     display: block;
     text-align: center;
     margin-bottom: .2rem;
+}
+
+#about .about-content img {
+    display: none;
 }
 
     #projects .project-packs .art {

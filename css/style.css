@@ -326,7 +326,7 @@ grid-template-columns: repeat(2, 2fr);
     width: 40vw;
     padding-left: 1rem;
     padding-top: 1rem;
-    background: url('../img/unsplash2.jpg')no-repeat center center/cover;
+    background: url('../img/marcelo.jpg')no-repeat center center/cover;
     color: var(--wc);
     text-align: center;
     height: 100%;
@@ -334,13 +334,14 @@ grid-template-columns: repeat(2, 2fr);
 
 #contact .contact-container .connect::before {
     content: "";
-    background: url('../img/splash.jpg')no-repeat center center/cover;
+    background: url('../img/marcelo.jpg')no-repeat center center/cover;
     position: absolute;
     height:100%;
     top: 0;
     right: 0;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.6;
+    z-index: -1;
 }
 
 #contact .contact-container .formup {
