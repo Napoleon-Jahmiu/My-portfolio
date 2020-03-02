@@ -74,6 +74,7 @@ p { line-height: 1.7;}
 .p-1 {padding: 1.5rem;}
 .p-2 {padding: 2rem;}
 .p-3 {padding: 3rem ;}
+.px-1 {padding-right: 2rem;}
 
 .bg-dark {
     background: var(--dc);
@@ -330,6 +331,7 @@ grid-template-columns: repeat(2, 2fr);
     color: var(--wc);
     text-align: center;
     height: 100%;
+    padding-right: 30px;
 }
 
 #contact .contact-container .connect::before {
@@ -351,6 +353,7 @@ grid-template-columns: repeat(2, 2fr);
     padding: 1rem;
     width: 60vw;
     overflow: hidden;
+    padding: 30px;
 }   
 
 #contact .contact-container .formup h1 {
