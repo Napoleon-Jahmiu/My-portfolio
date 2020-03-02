@@ -329,17 +329,18 @@ grid-template-columns: repeat(2, 2fr);
     background: url('../img/unsplash2.jpg')no-repeat center center/cover;
     color: var(--wc);
     text-align: center;
-    
+    height: 100%;
 }
 
-/* #contact .contact-container .connect::before {
+#contact .contact-container .connect::before {
     content: "";
-    background: url('../img/unsplash2.jpg')no-repeat center center/cover;
+    background: url('../img/splash.jpg')no-repeat center center/cover;
     position: absolute;
+    height:100%;
     top: 0;
     left: 0;
-    opacity: 0.9;
-} */
+    opacity: 0.4;
+}
 
 #contact .contact-container .formup {
     background: var(--ac);
